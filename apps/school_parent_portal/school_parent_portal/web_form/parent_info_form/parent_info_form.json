@@ -1,0 +1,80 @@
+{
+ "allow_comments": 0,
+ "allow_delete": 0,
+ "allow_edit": 0,
+ "allow_print": 0,
+ "anonymous": 0,
+ "apply_document_permissions": 1,
+ "button_label": "Submit",
+ "condition": "",
+ "doc_type": "Parent Information Form",
+ "is_standard": 1,
+ "login_required": 0,
+ "max_attachment_size": 0,
+ "modified": "2023-07-20 10:00:00.000000",
+ "module": "School Parent Portal",
+ "name": "parent-info-form",
+ "owner": "Administrator",
+ "published": 1,
+ "route": "parent-info-form",
+ "show_attachments": 0,
+ "show_list": 0,
+ "title": "Parent Information Form",
+ "web_form_fields": [
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Student Name",
+   "max_length": 0,
+   "max_value": 0,
+   "min_value": 0,
+   "options": "",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parent_name",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Parent Name",
+   "max_length": 0,
+   "max_value": 0,
+   "min_value": 0,
+   "options": "",
+   "reqd": 1
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Grade",
+   "max_length": 0,
+   "max_value": 0,
+   "min_value": 0,
+   "options": "",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Phone Number",
+   "max_length": 0,
+   "max_value": 0,
+   "min_value": 0,
+   "options": "",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Email",
+   "max_length": 0,
+   "max_value": 0,
+   "min_value": 0,
+   "options": "",
+   "reqd": 1
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="web-form-content">
+    {{ web_form_header }}
+    {%- if login_required -%}
+        {%- if frappe.user -%}
+            {{ web_form }}
+        {%- else -%}
+            <div class="login-required">{{ _("Please login to submit the form") }}</div>
+        {%- endif -%}
+    {%- else -%}
+        {{ web_form }}
+    {%- endif -%}
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+{% include "school_parent_portal/public/js/parent_form.js" %}
+</script>
+{% endblock %}

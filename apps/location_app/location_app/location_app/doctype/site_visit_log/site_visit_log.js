@@ -1,0 +1,8 @@
+// Copyright (c) 2025, Surya and contributors
+// For license information, please see license.txt
+
+// frappe.ui.form.on("Site Visit Log", {
+// 	refresh(frm) {
+
+// 	},
+// });

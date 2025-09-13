@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-20 17:08:35.476058",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "site_visit_assignment",
+  "assigned_to",
+  "photo_proof",
+  "captured_location",
+  "timestamp",
+  "verification_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "site_visit_assignment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Site Visit Assignment",
+   "options": "Site Visit Assignment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Assigned To",
+   "options": "User",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "photo_proof",
+   "fieldtype": "Attach Image",
+   "label": "Photo Proof",
+   "reqd": 1
+  },
+  {
+   "fieldname": "captured_location",
+   "fieldtype": "Geolocation",
+   "in_list_view": 1,
+   "label": "Captured Location ",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Timestamp",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "verification_status",
+   "fieldtype": "Select",
+   "label": "Verification Status",
+   "options": "Pending Verified\nOut of Radius",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-21 22:00:17.698133",
+ "modified_by": "Administrator",
+ "module": "Field Service",
+ "name": "Site Visit Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

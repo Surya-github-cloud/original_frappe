@@ -27,8 +27,8 @@ else
     # Create new site with environment-provided passwords
     bench new-site hrms.localhost \
       --force \
-      --mariadb-root-password ${MYSQL_ROOT_PASSWORD} \
-      --admin-password ${ADMIN_PASSWORD} \
+      --mariadb-root-password 123 \
+      --admin-password admin \
       --no-mariadb-socket
     
     # Install HRMS app

@@ -9,6 +9,7 @@ services:
       - --skip-innodb-read-only-compressed # Temporary fix for MariaDB 10.6
     environment:
       MYSQL_ROOT_PASSWORD: 123
+      ADMIN_PASSWORD: admin
     volumes:
       - mariadb-data:/var/lib/mysql
 
@@ -17,7 +18,7 @@ services:
 
   frappe:
     image: frappe/bench:latest
-    command: bash /workspace/init.sh
+    command: bash /workspace/docker/init.sh
     environment:
       - SHELL=/bin/bash
     working_dir: /home/frappe
